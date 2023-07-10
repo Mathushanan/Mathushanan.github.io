@@ -82,8 +82,16 @@
             cursor:pointer;
             margin-left:1rem;
             color:var(--main-color);
-            display: none !important;;
+            display: none !important;
             }
+        .close-bar{
+            font-size:35px;
+            z-index:1001;
+            cursor:pointer;
+            margin-left:1rem;
+            color:var(--main-color);
+            display: none !important;
+        }
     
 
 
@@ -162,10 +170,11 @@
             
         @media(max-width:890px){
             
-            .fa-bars{
-            display: block !important;;
+            .open-bar{
+            display: block !important;
             
             }
+           
             .navlist{
             position:absolute;
             top:-1000px;
