@@ -1,0 +1,221 @@
+   *{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    list-style:none;
+    scroll-behavior:smooth;
+    font-family:'Poppins','sans-serif';
+    }
+    a{
+    text-decoration:none;
+    color:#00458B;
+    }
+    
+    :root {
+        
+        --bg-color: #FFFFFF;
+        --second-bg-color: #202020;
+        --text-color: #00458B;
+        --second-color:#5f5c5c;
+        --main-color: #3FD2C7;
+        --big-font: 5rem;
+        --h2-font: 3rem;
+        --p-font: 1.1rem;
+      }
+
+    body{
+    background:var(--bg-color);
+    color:var(--text-color);
+    }
+
+    header{
+    position:fixed;
+    width:100%;
+    top:0;
+    right:0;
+    z-index:1000;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:transparent;
+    padding:22px 15%;
+    border-bottom:1px solid transparent;
+    transition:all .45s ease;
+    }
+
+    .logo{
+        color:var(--text-color);
+        font-size:1.2rem;
+        font-weight:700;
+        letter-spacing:1px;
+        }
+        .oneletter{
+        color:var(--main-color);
+        }
+        .navlist{
+        display:flex;
+        }
+        .navlist a{
+        text-decoration:none;
+        color:var(--second-color);
+        font-size:1rem;
+        font-weight:bold;
+        margin:0 1rem;
+        transition:all .45s ease;
+        
+        }
+        .navlist a:hover{
+        color:var(--main-color);
+        }
+        .navlist a.active{
+        color:var(--main-color);
+        }
+        span{
+        color:var(--main-color);
+        }
+        
+
+        .fa-bars{
+            font-size:35px;
+            z-index:1001;
+            cursor:pointer;
+            margin-left:1rem;
+            color:var(--main-color);
+            display: none !important;;
+            }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media(max-width:1480px){
+
+            header{
+            padding:12px 2.5%;
+            transition:.1s;
+            }
+            section{
+            padding:110px 3% 60px;
+            }
+            .end{
+            padding:15px 3%;
+            }
+            
+        }
+        @media(max-width:1100px){
+            :root{
+            --big-font:4rem;
+            --h2-font:2.5rem;
+            --p-font:1rem;
+            transition:.1s;
+            }
+            .hometext h3{
+            font-size:2.5rem;
+            }
+            .home{
+            height:87vh;
+            }
+            
+        }
+        @media(max-width:920px){
+            .about{
+            grid-template-columns:1fr;
+            }
+            .about-img{
+            text-align:center;
+            order:2;
+            
+            }
+            .about-img img{
+            width:100%;
+            height:auto;
+            max-width:100%;
+            }
+            .contact{
+            grid-template-columns:1fr;
+            }
+            .logo{
+                font-size: 1rem;
+            }
+         }
+            
+            
+            
+            
+            
+        @media(max-width:890px){
+            
+            .fa-bars{
+            display: block !important;;
+            
+            }
+            .navlist{
+            position:absolute;
+            top:-1000px;
+            right:0;
+            left:0;
+            display:flex;
+            flex-direction:column;
+            background:var(--bg-color);
+            text-align:center;
+            transition: all .45s ease;
+            }
+            .navlist a{
+            display:block;
+            margin:17px;
+            font-size:20px;
+            transition:all .45 ease;
+            
+            }
+            .navlist.open{
+            top:100%;
+            }
+            
+        }
+            @media(max-width:500px){
+            :root{
+            --big-font:3rem;
+            --h2-font:2.5rem;
+            --p-font:1rem;
+            transition:.1s;
+            }
+            .home-text h3{
+            font-size:2rem;
+            font-weight:700;
+            color:var(--text-color);
+            list-style:1.1;
+            margin:0 0 35px;
+            }
+            }
+            @media(max-width:340px){
+            :root{
+            --big-font:2rem;
+            --h2-font:2.5rem;
+            --p-font:1rem;
+            transition:.1s;
+            }
+            .home-text h3{
+            font-size:1.5rem;
+            font-weight:700;
+            color:var(--text-color);
+            list-style:1.1;
+            margin:0 0 35px;
+            }
+            }
