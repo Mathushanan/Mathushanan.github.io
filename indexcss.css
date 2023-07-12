@@ -154,7 +154,7 @@
             }
             .home-text{
                 margin-left: 10rem;
-              
+               
                 
             }
             .one{
@@ -185,37 +185,56 @@
             
             }
             .home-text h3{
-            font-size:3rem;
-            font-weight:700;
-            color:var(--text-color);
-            list-style:1.1;
-            margin:0 0 35px;
-            }
+                font-size:2rem;
+                font-weight:700;
+                color:var(--text-color);
+                list-style:1.1;
+                margin:0 0 35px;
+                }
             .home-text p{
             font-size:var(--p-font);
             color:var(--second-color);
             list-style:1.8;
             margin-bottom:40px;
             }
+            .home_scroll-button{
+                color: var(--first-color);
+                transition: .3s;
+            }
+            .home_scroll-button:hover{
+                transform: translateY(.25rem);
+            }
+            .home_scroll-mouse{
+                font-size: 2rem;;
+            }
+            .home_scroll-name{
+            
+                font-size: var(--font-medium);
+                color: var(--title-color);
+                font-weight: var(--font-medium);
+                margin-right: var(--mb-0-25);
+                padding: .5rem;
+            }
+            .home_scroll-arrow{
+               font-size: 1.25rem;
+               transition: .3s;
+              
+            }
             .button{
-            display:inline-flex;
-            align-items:center;
-            justify-content:center;
-            }
-            .btn1{
-            display:inline-block;
-            padding:12px 28px;
-            background:var(--main-color);
-            border-radius:5px;
-            color:var(--text-color);
-            font-size:1rem;
-            letter-spacing:1px;
-            font-weight:600;
-            transition:all .45s ease;
-            }
-            .btn1:hover{
-            transform:scale(0.9);
-            }
+                
+                background-color: var(--main-color);
+                color: #FFF;
+                padding:.5rem ;
+                border-radius: .5rem;
+                display: inline-block;
+             
+             }
+             .button:hover{
+                background-color: var(--text-color);
+                color: #FFF;
+             }
+            
+         
 
 
 
@@ -250,25 +269,24 @@
                          }
 
 
-
-
-                         .typed-out{
+                         .typed-out {
                             overflow: hidden;
-                            border-right: .15em solid orange;
+                            border-right: .15em solid;
                             white-space: nowrap;
-                            animation: typing 2.5s steps(50, end) forwards, blinking .8s infinite;
                             font-size: 1.6rem;
                             width: 0;
-                          }
-                          @keyframes typing {
-                            from { width: 0 }
-                            to { width: 100% }
+                            animation: typing 2.5s steps(50, end) forwards , blinking 1.2s infinite;
+                            width: 0;
                           }
                           @keyframes blinking {
                             from { border-color: transparent }
-                            to { border-color: orange; }
+                            to { border-color:var(--text-color); }
                           }
-
+                          @keyframes typing {
+                            from { width: 0; }
+                            to { width: 100%; }
+                          }
+                          
                         
                            
 
@@ -317,13 +335,13 @@
             --p-font:1rem;
             transition:.1s;
             }
-            .hometext h3{
-            font-size:2.5rem;
-            }
+         
             .home{
             height:87vh;
             }
-            
+            .hometext h3{
+                font-size:2.5rem;
+                }
         }
         @media(max-width:920px){
             .about{
@@ -444,7 +462,7 @@
             transition:.1s;
             }
             .home-text h3{
-            font-size:2rem;
+            font-size:1.5rem;
             font-weight:700;
             color:var(--text-color);
             list-style:1.1;
@@ -457,6 +475,7 @@
                 justify-content: center; /* Center align the icons */
                
               }
+            
         
             }
             @media(max-width:340px){
@@ -467,10 +486,10 @@
             transition:.1s;
             }
             .home-text h3{
-            font-size:1.5rem;
-            font-weight:700;
-            color:var(--text-color);
-            list-style:1.1;
-            margin:0 0 35px;
-            }
+                font-size:1.5rem;
+                font-weight:700;
+                color:var(--text-color);
+                list-style:1.1;
+                margin:0 0 35px;
+                }
             }

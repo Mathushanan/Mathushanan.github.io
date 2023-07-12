@@ -33,7 +33,18 @@ window.addEventListener('resize', () => {
   });
 
 
+  const typedElement = document.querySelector('.typed-out');
 
+  function restartAnimation() {
+    typedElement.style.animation = 'none';
+    typedElement.offsetHeight; // Trigger reflow to restart animation
+    typedElement.style.animation = null;
+  }
+  
+  // Listen for animationend event and restart the animation after 3 seconds
+  typedElement.addEventListener('animationend', () => {
+    setTimeout(restartAnimation, 3000);
+  });
 
 
 window.onscroll =()=>{
