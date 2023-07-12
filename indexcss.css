@@ -129,8 +129,9 @@
             color:var(--main-color);
             
         }
-        section{
+        .section{
             padding:160px 15% 120px;
+            position: relative;
             }
 
 
