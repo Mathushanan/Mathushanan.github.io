@@ -21,7 +21,7 @@
        --second-color: #5f5c5c;
        --main-color: #3FD2C7;
        --big-font: 5rem;
-       --h2-font: 3rem;
+       --h2-font: 2.5rem;
        --p-font: 1.1rem;
 
    }
@@ -121,13 +121,85 @@
 
    }
 
+   .fa-whatsapp {
+    color: #25D366;
+}
+
+.fa-linkedin {
+    color: #0077B5;
+}
+
+.fa-facebook {
+    color: #1877F2;
+}
+
+.fa-github {
+    color: #181717;
+}
+
+.fa-envelope-open-text {
+    color: #D14836;
+}
+
+.fa-instagram {
+    color: #E4405F;
+}
+
+.fa-free-code-camp {
+    color: #006400;
+}
+
+.fa-laptop-code {
+    color: #FFA116;
+}
+
+
+.typed-out {
+    overflow: hidden;
+    border-right: .15em solid;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: typing 2.5s steps(50, end) forwards, blinking 1.2s infinite;
+
+}
+
+.Typed-out {
+    overflow: hidden;
+    border-right: .15em solid;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: typing 2.5s steps(50, end) forwards, blinking 1.2s infinite;
+
+}
+
+@keyframes blinking {
+    from {
+        border-color: transparent
+    }
+
+    to {
+        border-color: var(--text-color);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
 
 
 
    .home {
        display: flex;
        align-items: center;
-       height: 100vh;
+       
 
 
    }
@@ -283,7 +355,7 @@
        grid-template-columns: repeat(2, 1fr);
        align-items: center;
        gap: 1.5rem;
-       height: 100vh;
+       
    }
 
    .about-text h2 {
@@ -334,7 +406,7 @@
 
    .skills {
        padding: 160px 10% 120px;
-       height: 100vh;
+       
    }
 
    .skills img{
@@ -344,10 +416,11 @@
 
    .box {
        background: var(--bg-color);
-       padding: 35px 45px;
+       padding: 1rem;
        transition: all .45s ease;
        text-align: center;
-       border: 1px solid;
+       
+       
    }
 
    .s-icons i {
@@ -359,6 +432,9 @@
        font-weight: 600;
        color: var(--text-color);
        margin-bottom: 15px;
+       margin-top: 1rem;
+       text-align: center;
+       
    }
 
    .box p {
@@ -373,85 +449,50 @@
        transform: translateY(-8px);
        cursor: pointer;
    }
-
-
-
-
-
-
-   .fa-whatsapp {
-       color: #25D366;
+   .skills-scroll{
+   margin-top: 2rem;
+    text-align: center;
    }
 
-   .fa-linkedin {
-       color: #0077B5;
+   .education-content{
+    border:1px solid;
+    padding:5rem;
+    margin-top: 5rem;
    }
-
-   .fa-facebook {
-       color: #1877F2;
+   .education-box{
+    border:1px solid red;
+    width:100%;
+   
+    padding:1rem;
    }
-
-   .fa-github {
-       color: #181717;
+   .education-box h3{
+    font-size: 1.2rem;
    }
-
-   .fa-envelope-open-text {
-       color: #D14836;
+   .education-box h2{
+    font-size: 1rem;
    }
-
-   .fa-instagram {
-       color: #E4405F;
+   .education-logo{
+  
+    margin-top: 1rem;
+   
+    border: 1px solid;
+    width:50%;
+    text-align: center;
+    display: flex;
+    justify-content:space-around;
    }
-
-   .fa-free-code-camp {
-       color: #006400;
-   }
-
-   .fa-laptop-code {
-       color: #FFA116;
-   }
-
-
-   .typed-out {
-       overflow: hidden;
-       border-right: .15em solid;
-       white-space: nowrap;
-       font-size: 1.6rem;
-       width: 0;
-       animation: typing 2.5s steps(50, end) forwards, blinking 1.2s infinite;
+   .education-logo img{
+    width:150px;
+    border: 1px solid;;
 
    }
 
-   .Typed-out {
-       overflow: hidden;
-       border-right: .15em solid;
-       white-space: nowrap;
-       font-size: 1.6rem;
-       width: 0;
-       animation: typing 2.5s steps(50, end) forwards, blinking 1.2s infinite;
 
-   }
 
-   @keyframes blinking {
-       from {
-           border-color: transparent
-       }
 
-       to {
-           border-color: var(--text-color);
-       }
-   }
 
-   @keyframes typing {
-       from {
-           width: 0;
-       }
 
-       to {
-           width: 100%;
-       }
-   }
-
+   
 
 
 
@@ -636,7 +677,10 @@
            margin: 0;
        }
 
-
+       .skills-content {
+        grid-template-columns: repeat(auto-fit, minmax(80px, auto));
+      
+    }
 
    }
 
