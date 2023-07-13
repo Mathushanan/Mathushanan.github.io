@@ -471,7 +471,7 @@
    }
    .education-box:hover{
     transform: translateX(-8px);
-    cursor: pointer;
+
 
    }
    .education-box h3{
@@ -480,6 +480,13 @@
    .education-box h2{
     font-size: 1rem;
     color: #b0b0b0;
+   }
+   .education-box h2 a{
+    color: #b0b0b0;
+   }
+   .education-box h2 a:hover{
+    color: #0000FF;
+    text-decoration: underline;
    }
 
    .education-box img{
@@ -494,6 +501,65 @@
     color: var(--text-color);
    }
 
+   .projects{
+   
+   }
+   .project-content{
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+       
+       gap: 1rem;
+       margin-top: 5rem;
+   }
+  .project-box{
+  
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: all .45s ease;
+    top: 0;
+  
+   }
+   .project-box:hover{
+    transform: translateY(-8px);
+   }
+   .project-box img{
+    width:100%;
+ 
+    padding: 1rem;
+    
+   }
+   .project-content .project-box h1{
+    font-size: 1.2rem;
+    text-align: center;
+    
+   }
+   .project-box h2{
+    font-size: 1rem;
+    text-align: center;
+    color:#ede7e7;
+   }
+   .project-box-header{
+    background-color: var(--main-color);
+    color: #FFF;
+    padding: 1rem 0 1rem 0;
+    border-radius:  5px 5px 0 0;
+   }
+   .project-box a{
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+    display: block;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    background-color:var(--text-color);
+    color: #FFF;
+    
+   }
+   .project-box p{
+    padding: 1rem;
+   }
   
 
 
