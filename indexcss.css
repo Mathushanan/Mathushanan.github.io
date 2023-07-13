@@ -455,37 +455,46 @@
    }
 
    .education-content{
-    border:1px solid;
-    padding:5rem;
+    
     margin-top: 5rem;
+
    }
    .education-box{
-    border:1px solid red;
-    width:100%;
    
-    padding:1rem;
+    width:100%;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    padding:0.5rem;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+    transition: all .45s ease;
+    border-left: 5px solid;
+   }
+   .education-box:hover{
+    transform: translateX(-8px);
+    cursor: pointer;
+
    }
    .education-box h3{
     font-size: 1.2rem;
    }
    .education-box h2{
     font-size: 1rem;
+    color: #b0b0b0;
    }
-   .education-logo{
-  
-    margin-top: 1rem;
-   
-    border: 1px solid;
-    width:50%;
-    text-align: center;
-    display: flex;
-    justify-content:space-around;
-   }
-   .education-logo img{
-    width:150px;
-    border: 1px solid;;
+
+   .education-box img{
+    width:50px;
 
    }
+   .michaels-section img{
+    width:30px;
+   }
+   .education-span{
+    font-size: 1rem;
+    color: var(--text-color);
+   }
+
+  
 
 
 
@@ -552,6 +561,9 @@
        .hometext h3 {
            font-size: 2.5rem;
        }
+       .education-box h3{
+        font-size: 1.2rem;
+       }
    }
 
    @media(max-width:920px) {
@@ -589,7 +601,9 @@
 
    @media(max-width:890px) {
 
-
+    .section {
+        padding: 40px 15px 30px;
+    }
 
        .open-bar {
            display: block !important;
@@ -714,7 +728,25 @@
            height: auto;
            max-width: 100%;
        }
+       .education-span{
+        display: block;
+       }
 
+
+   }
+   @media(max-width:365px) {
+
+
+    .education-content h2{
+        font-size: 0.7rem;
+       }
+       .education-content h3{
+        font-size: 1rem;
+       }
+       .education-span{
+        font-size: .6rem;
+        color: var(--text-color);
+       }
 
    }
 
@@ -732,5 +764,15 @@
            color: var(--text-color);
            list-style: 1.1;
            margin: 0 0 35px;
+       }
+       .education-content h2{
+        font-size: 0.7rem;
+       }
+       .education-content h3{
+        font-size: 1rem;
+       }
+       .education-span{
+        font-size: .6rem;
+        color: var(--text-color);
        }
    }
