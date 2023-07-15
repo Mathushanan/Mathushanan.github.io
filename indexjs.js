@@ -3,7 +3,18 @@ window.addEventListener("scroll",function(){
 header.classList.toggle("sticky",window.scrollY>100);
 });
 
+const navItems = document.querySelectorAll('.nav-item');
 
+// Add event listener to each navigation item
+navItems.forEach(navItem => {
+  navItem.addEventListener('click', () => {
+    // Remove active class from all navigation items
+    navItems.forEach(item => item.classList.remove('active'));
+
+    // Add active class to clicked navigation item
+    navItem.classList.add('active');
+  });
+});
 
 let menu = document.querySelector('.fa-bars');
 let navlist = document.querySelector('.navlist');

@@ -62,6 +62,12 @@
 
 
    }
+   .logo:hover{
+    color:var(--main-color);
+   }
+   .logo:hover span{
+    color:var(--text-color);
+   }
 
    .navlist {
        display: flex;
@@ -93,8 +99,10 @@
        color: var(--main-color);
    }
 
-   .navlist a.active {
-       color: var(--main-color);
+
+
+   .nav-item.active a{
+    color: var(--main-color);
    }
 
    span {
@@ -414,6 +422,29 @@
     height:50px;
    }
 
+
+
+.soft-skills{
+
+
+}
+
+.soft-skills span{
+   
+    padding: .5rem;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 1rem;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+    transition: all .45s ease;
+    border-left: 5px solid;
+    margin-right: 1rem;
+    
+}
+
+
+
+
    .box {
        background: var(--bg-color);
        padding: 1rem;
@@ -618,31 +649,59 @@
 
 .footer .section{
     background-color: var(--main-color);
+    
+    padding: 50px 15% 10px 15%;
+    
+}
+.footer .section .main-footer{
     display: flex;
     justify-content: space-between;
-    
 }
 .footer .contact-box .home_social{
     display:flex;
+    align-items: center;
 }
 .footer .contact-box{
-    border:1px solid;
+  
+    align-items: center;
 }
 .footer .nav-box{
-    border:1px solid;
+   
+    
     
 }
-.footer .nav-box .navlist{
+.footer .nav-box .nav-list{
     display:block;
 }
 
 .footer .contact-box .home_social i{
-    color: var(--text-color);
+    color: #EAEBE8;
     margin-left: 2rem;
 }
-.footer .navlist a{
-    color: #FFF;
+.footer .nav-list a{
+    color: #EAEBE8;
   
+}
+.footer .nav-list a:hover{
+    
+    text-decoration: underline;
+  
+}
+
+.footer .copyright-footer{
+    margin:1rem 0 1rem 0;
+   
+}
+.copyright{
+    text-align: center;
+}
+.footer hr{
+    border: none;
+    border-top: 2px solid #FFF;
+    
+}
+.footer .copyright p{
+color: #EAEBE8;
 }
 
 
@@ -752,6 +811,11 @@
     .section {
         padding: 40px 15px 30px;
     }
+    .footer .section{
+       
+        padding: 40px 15px 10px 15px;
+        
+    }
 
        .open-bar {
            display: block !important;
@@ -842,6 +906,12 @@
        .skills-content {
         grid-template-columns: repeat(auto-fit, minmax(80px, auto));
       
+    }
+    .footer .contact-box{
+        display:none;
+    }
+    .footer .nav-box .navlist{
+        display:block;
     }
 
    }
