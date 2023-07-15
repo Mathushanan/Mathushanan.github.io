@@ -425,7 +425,7 @@
 
 
 .soft-skills{
-
+border: 1px solid;
 
 }
 
@@ -627,7 +627,7 @@
    
 }
 .download-btn{
-    margin-left: 5rem;
+    margin-left: 4rem;
     color: #FFF;
     background-color: var(--main-color);
     padding: .6rem;
