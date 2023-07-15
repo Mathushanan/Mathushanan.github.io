@@ -78,3 +78,5 @@ navlist.classList.remove('open');
 menu.classList.remove('fa-bars-staggered','fa-fade');
 menu.classList.add('fa-bars');
 };
+
+

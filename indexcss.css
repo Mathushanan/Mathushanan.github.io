@@ -390,6 +390,7 @@
 
    .main-text {
        text-align: center;
+      
    }
 
    .main-text p {
@@ -409,11 +410,11 @@
        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
        align-items: center;
        gap: 1rem;
-       margin-top: 5rem;
+       margin-top: 3rem;
    }
 
    .skills {
-       padding: 160px 10% 120px;
+       padding: 120px 10% 120px;
        
    }
 
@@ -425,20 +426,33 @@
 
 
 .soft-skills{
-border: 1px solid;
 
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+align-items: center;
+gap: 1rem;
+margin-top: 4rem;
+
+}
+.soft-skills span:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+    color:var(--text-color);
 }
 
 .soft-skills span{
    
     padding: .5rem;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
     border-radius: 5px;
-    margin-top: 1rem;
+    color: var(--text-color);
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
     transition: all .45s ease;
-    border-left: 5px solid;
-    margin-right: 1rem;
+    border-left: 4px solid var(--text-color);
+    text-align: center;
+
+    
     
 }
 
@@ -797,6 +811,13 @@ color: #EAEBE8;
        .logo {
            font-size: 1rem;
        }
+       .soft-skills{
+
+  
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+       
+        
+        }
    }
 
 
@@ -913,6 +934,13 @@ color: #EAEBE8;
     .footer .nav-box .navlist{
         display:block;
     }
+    .soft-skills{
+
+  
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+       
+        
+        }
 
    }
 
@@ -949,6 +977,13 @@ color: #EAEBE8;
        .education-span{
         display: block;
        }
+       .soft-skills{
+
+  
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+       
+        
+        }
 
 
    }
@@ -993,4 +1028,11 @@ color: #EAEBE8;
         font-size: .6rem;
         color: var(--text-color);
        }
+       .soft-skills{
+
+  
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+       
+        
+        }
    }
