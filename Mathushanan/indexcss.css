@@ -692,6 +692,7 @@ margin-top: 4rem;
 .footer .contact-box .home_social i{
     color: #EAEBE8;
     margin-left: 2rem;
+   
 }
 .footer .nav-list a{
     color: #EAEBE8;
@@ -705,14 +706,18 @@ margin-top: 4rem;
 
 .footer .copyright-footer{
     margin:1rem 0 1rem 0;
+    
    
 }
 .copyright{
     text-align: center;
+   
+
 }
 .footer hr{
     border: none;
     border-top: 2px solid #FFF;
+ 
     
 }
 .footer .copyright p{
